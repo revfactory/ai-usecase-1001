@@ -1,0 +1,14 @@
+# Database files
+*.db
+*.db.backup
+prisma/dev.db
+prisma/dev.db.backup
+
+# Scripts (not needed for production)
+scripts/
+
+# Data files (loaded from DB)
+src/data/usecases-english.json
+src/data/usecases-missing.json
+src/data/usecases-parsed.json
+src/data/usecases-partial.json
