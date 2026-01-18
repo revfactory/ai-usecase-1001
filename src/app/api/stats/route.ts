@@ -1,8 +1,12 @@
 import { NextResponse } from 'next/server';
 import prisma from '@/lib/prisma';
 
+// Edge 캐싱 설정
+export const revalidate = 300; // 5분 캐시
+
 export async function GET() {
   try {
+    const startTime = Date.now();
     // 전체 통계
     const [
       totalUsecases,
@@ -59,33 +63,43 @@ export async function GET() {
       },
     });
 
-    return NextResponse.json({
-      total: totalUsecases,
-      newCases: newUsecases,
-      industries: industriesWithCount.map((i) => ({
-        id: i.id,
-        name: i.name,
-        color: i.color,
-        icon: i.icon,
-        count: i._count.useCases,
-      })),
-      agentTypes: agentTypesWithCount.map((a) => ({
-        id: a.id,
-        name: a.name,
-        icon: a.icon,
-        description: a.description,
-        count: a._count.useCases,
-      })),
-      topTechnologies: topTechnologies.map((t) => ({
-        name: t.name,
-        count: t._count.useCases,
-      })),
-      matrix: matrix.map((m) => ({
-        industry: m.industryId,
-        agentType: m.agentTypeId,
-        count: m._count.id,
-      })),
-    });
+    const duration = Date.now() - startTime;
+
+    return NextResponse.json(
+      {
+        total: totalUsecases,
+        newCases: newUsecases,
+        industries: industriesWithCount.map((i) => ({
+          id: i.id,
+          name: i.name,
+          color: i.color,
+          icon: i.icon,
+          count: i._count.useCases,
+        })),
+        agentTypes: agentTypesWithCount.map((a) => ({
+          id: a.id,
+          name: a.name,
+          icon: a.icon,
+          description: a.description,
+          count: a._count.useCases,
+        })),
+        topTechnologies: topTechnologies.map((t) => ({
+          name: t.name,
+          count: t._count.useCases,
+        })),
+        matrix: matrix.map((m) => ({
+          industry: m.industryId,
+          agentType: m.agentTypeId,
+          count: m._count.id,
+        })),
+        _meta: { queryTime: `${duration}ms` },
+      },
+      {
+        headers: {
+          'Cache-Control': 'public, s-maxage=300, stale-while-revalidate=600',
+        },
+      }
+    );
   } catch (error) {
     console.error('Error fetching stats:', error);
     return NextResponse.json(

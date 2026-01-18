@@ -1,8 +1,12 @@
 import { NextRequest, NextResponse } from 'next/server';
 import prisma from '@/lib/prisma';
 
+// Edge 캐싱 설정
+export const revalidate = 300; // 5분 캐시
+
 export async function GET(request: NextRequest) {
   try {
+    const startTime = Date.now();
     const { searchParams } = new URL(request.url);
 
     // 쿼리 파라미터
@@ -81,15 +85,25 @@ export async function GET(request: NextRequest) {
       isNew: uc.isNew,
     }));
 
-    return NextResponse.json({
-      data: formattedUsecases,
-      pagination: {
-        page,
-        limit,
-        total,
-        totalPages: Math.ceil(total / limit),
+    const duration = Date.now() - startTime;
+
+    return NextResponse.json(
+      {
+        data: formattedUsecases,
+        pagination: {
+          page,
+          limit,
+          total,
+          totalPages: Math.ceil(total / limit),
+        },
+        _meta: { queryTime: `${duration}ms` },
       },
-    });
+      {
+        headers: {
+          'Cache-Control': 'public, s-maxage=300, stale-while-revalidate=600',
+        },
+      }
+    );
   } catch (error) {
     console.error('Error fetching usecases:', error);
     return NextResponse.json(
