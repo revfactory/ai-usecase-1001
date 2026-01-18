@@ -51,6 +51,7 @@
   "dashboard": {
     "title": "Insights Dashboard",
     "subtitle": "Discover trends and patterns in AI use cases at a glance",
+    "loading": "Loading data...",
     "totalCases": "Total Cases",
     "newCases": "New Cases",
     "techStack": "Tech Stack",
@@ -64,6 +65,7 @@
   "matrix": {
     "title": "Industry × Agent Matrix",
     "subtitle": "Click a cell to view AI use cases for that combination",
+    "loading": "Loading matrix...",
     "industryAgent": "Industry / Agent",
     "total": "Total",
     "low": "Low",

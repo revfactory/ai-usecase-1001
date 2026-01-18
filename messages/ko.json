@@ -51,6 +51,7 @@
   "dashboard": {
     "title": "인사이트 대시보드",
     "subtitle": "AI 활용 사례의 트렌드와 패턴을 한눈에 파악하세요",
+    "loading": "데이터를 불러오는 중...",
     "totalCases": "전체 사례",
     "newCases": "신규 사례",
     "techStack": "기술 스택",
@@ -64,6 +65,7 @@
   "matrix": {
     "title": "산업 × 에이전트 매트릭스",
     "subtitle": "셀을 클릭하여 해당 조합의 AI 활용 사례를 확인하세요",
+    "loading": "매트릭스를 불러오는 중...",
     "industryAgent": "산업 / 에이전트",
     "total": "합계",
     "low": "적음",

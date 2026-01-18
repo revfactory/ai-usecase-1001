@@ -89,6 +89,28 @@ export default function DashboardPage() {
 
   const COLORS = ['#FF6B6B', '#4ECDC4', '#9B5DE5', '#FF9F1C', '#00C49A', '#45B7D1'];
 
+  if (loading) {
+    return (
+      <div className="min-h-screen py-16 px-4">
+        <div className="max-w-7xl mx-auto text-center">
+          <div className="text-6xl animate-bounce mb-4">📊</div>
+          <p className="text-xl text-[var(--text-medium)]" style={{ fontFamily: 'Gaegu, cursive' }}>
+            {t('loading') || 'Loading...'}
+          </p>
+          <div className="mt-8 flex justify-center gap-2">
+            {[0, 1, 2].map((i) => (
+              <div
+                key={i}
+                className="w-4 h-4 rounded-full bg-[var(--accent-teal)] animate-pulse"
+                style={{ animationDelay: `${i * 0.2}s` }}
+              />
+            ))}
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="min-h-screen py-8 px-4">
       <div className="max-w-7xl mx-auto">
