@@ -1,0 +1,115 @@
+{
+  "common": {
+    "cases": "개 사례",
+    "total": "총",
+    "new": "신규",
+    "search": "검색",
+    "filter": "필터",
+    "reset": "초기화",
+    "viewMore": "더 보기",
+    "loading": "로딩 중...",
+    "noResults": "검색 결과가 없습니다"
+  },
+  "nav": {
+    "home": "홈",
+    "explore": "탐색",
+    "dashboard": "대시보드",
+    "matrix": "매트릭스"
+  },
+  "home": {
+    "heroTitle1": "1,001가지",
+    "heroTitle2": "AI 활용 사례에서",
+    "heroTitle3": "인사이트",
+    "heroTitle4": "를 발견하세요",
+    "heroSubtitle": "세계 최고 기업들의 실제 생성형 AI 도입 사례를 한눈에 탐색하고 비즈니스에 적용해보세요",
+    "startExplore": "탐색 시작하기",
+    "viewDashboard": "대시보드 보기",
+    "totalCases": "활용 사례",
+    "industries": "산업 분야",
+    "agentTypes": "에이전트 유형",
+    "newCases": "신규 사례",
+    "industryExplore": "산업별 탐색",
+    "agentTypeExplore": "에이전트 유형",
+    "featuredCases": "주목할 만한 성과",
+    "newAddedCases": "신규 추가된 사례",
+    "viewMoreNew": "더 많은 신규 사례 보기",
+    "footer": "Google Cloud AI 활용 사례 기반 | 1,001가지 실제 생성형 AI 사례",
+    "dataSource": "데이터 출처: Google Cloud \"1,001 Real Generative AI Use Cases\""
+  },
+  "explore": {
+    "title": "사례 탐색하기",
+    "subtitle": "필터를 사용하여 원하는 AI 활용 사례를 찾아보세요",
+    "searchPlaceholder": "기업, 기술, 키워드...",
+    "newOnly": "신규 사례만",
+    "industryFilter": "산업 분야",
+    "agentFilter": "에이전트 유형",
+    "clearFilters": "필터 초기화",
+    "foundCases": "개의 사례를 찾았습니다",
+    "noResults": "검색 결과가 없습니다",
+    "tryOther": "다른 필터 조건을 시도해보세요"
+  },
+  "dashboard": {
+    "title": "인사이트 대시보드",
+    "subtitle": "AI 활용 사례의 트렌드와 패턴을 한눈에 파악하세요",
+    "totalCases": "전체 사례",
+    "newCases": "신규 사례",
+    "techStack": "기술 스택",
+    "industries": "산업 분야",
+    "industryChart": "산업별 사례 분포",
+    "agentChart": "에이전트 유형별 분포",
+    "heatmap": "산업 × 에이전트 히트맵",
+    "viewAll": "전체 보기",
+    "topTech": "주요 기술 스택"
+  },
+  "matrix": {
+    "title": "산업 × 에이전트 매트릭스",
+    "subtitle": "셀을 클릭하여 해당 조합의 AI 활용 사례를 확인하세요",
+    "industryAgent": "산업 / 에이전트",
+    "total": "합계",
+    "low": "적음",
+    "medium": "중간",
+    "high": "많음",
+    "clickInfo": "셀을 클릭하면 해당 조합의 사례를 탐색 페이지에서 확인할 수 있습니다"
+  },
+  "industries": {
+    "automotive_logistics": "자동차 및 물류",
+    "business_services": "비즈니스 서비스",
+    "financial_services": "금융 서비스",
+    "healthcare_lifesciences": "헬스케어",
+    "hospitality_travel": "호스피탈리티",
+    "manufacturing": "제조",
+    "media_marketing": "미디어/마케팅",
+    "public_sector": "공공 부문",
+    "retail": "소매",
+    "technology": "기술",
+    "telecommunications": "통신"
+  },
+  "agentTypes": {
+    "customer_agent": "고객 에이전트",
+    "employee_agent": "직원 에이전트",
+    "creative_agent": "크리에이티브",
+    "code_agent": "코드 에이전트",
+    "data_agent": "데이터 에이전트",
+    "security_agent": "보안 에이전트"
+  },
+  "agentDescriptions": {
+    "customer_agent": "고객 서비스, 챗봇, 가상 비서 등 고객 대면 AI",
+    "employee_agent": "직원 생산성 향상, 내부 도구, 업무 자동화",
+    "creative_agent": "콘텐츠 생성, 디자인, 마케팅 자료 제작",
+    "code_agent": "코드 생성, 리뷰, 개발 도구 지원",
+    "data_agent": "데이터 분석, 인사이트 추출, 예측",
+    "security_agent": "보안 모니터링, 위협 탐지, 규정 준수"
+  },
+  "case": {
+    "notFound": "사례를 찾을 수 없습니다",
+    "backToExplore": "탐색 페이지로 돌아가기",
+    "backLink": "탐색으로 돌아가기",
+    "useCase": "활용 사례",
+    "keyMetrics": "주요 성과",
+    "technologies": "사용 기술",
+    "industrySection": "산업 분야",
+    "agentSection": "에이전트 유형",
+    "relatedCases": "관련 사례",
+    "exploreMore": "더 많은 사례 탐색하기"
+  }
+}

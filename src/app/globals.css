@@ -1,26 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&family=Jua&family=Poor+Story&display=swap');
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* 파스텔 색종이 컬러 팔레트 */
+  --paper-cream: #FFF8E7;
+  --paper-pink: #FFE4E6;
+  --paper-mint: #D1FAE5;
+  --paper-lavender: #E9D5FF;
+  --paper-sky: #DBEAFE;
+  --paper-peach: #FED7AA;
+  --paper-yellow: #FEF3C7;
+
+  /* 보색 강조 색상 */
+  --accent-coral: #FF6B6B;
+  --accent-teal: #4ECDC4;
+  --accent-purple: #9B5DE5;
+  --accent-orange: #FF9F1C;
+  --accent-green: #00C49A;
+
+  /* 텍스트 색상 */
+  --text-dark: #2D3748;
+  --text-medium: #4A5568;
+  --text-light: #718096;
+
+  /* 그림자 */
+  --shadow-paper: 4px 4px 0px rgba(0,0,0,0.15);
+  --shadow-paper-hover: 6px 6px 0px rgba(0,0,0,0.2);
+  --shadow-lifted: 8px 8px 16px rgba(0,0,0,0.1);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-background: var(--paper-cream);
+  --color-foreground: var(--text-dark);
+  --font-sans: 'Gaegu', cursive;
+  --font-display: 'Jua', sans-serif;
+  --font-handwriting: 'Poor Story', cursive;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background:
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 40px,
+      rgba(0,0,0,0.02) 40px,
+      rgba(0,0,0,0.02) 41px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 40px,
+      rgba(0,0,0,0.02) 40px,
+      rgba(0,0,0,0.02) 41px
+    ),
+    var(--paper-cream);
+  color: var(--text-dark);
+  font-family: 'Gaegu', cursive;
+  font-size: 18px;
+  min-height: 100vh;
+}
+
+/* 종이 카드 스타일 */
+.paper-card {
+  background: white;
+  border-radius: 3px;
+  box-shadow: var(--shadow-paper);
+  position: relative;
+  transition: all 0.2s ease;
+  transform: rotate(var(--rotation, 0deg));
+}
+
+.paper-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(255,255,255,0.3) 0%,
+    transparent 50%,
+    rgba(0,0,0,0.02) 100%
+  );
+  pointer-events: none;
+  border-radius: 3px;
+}
+
+.paper-card:hover {
+  box-shadow: var(--shadow-paper-hover);
+  transform: rotate(var(--rotation, 0deg)) translateY(-2px);
+}
+
+/* 색종이 배경 클래스들 */
+.bg-paper-pink { background-color: var(--paper-pink); }
+.bg-paper-mint { background-color: var(--paper-mint); }
+.bg-paper-lavender { background-color: var(--paper-lavender); }
+.bg-paper-sky { background-color: var(--paper-sky); }
+.bg-paper-peach { background-color: var(--paper-peach); }
+.bg-paper-yellow { background-color: var(--paper-yellow); }
+.bg-paper-cream { background-color: var(--paper-cream); }
+
+/* 오려낸 글자 스타일 */
+.cutout-text {
+  font-family: 'Jua', sans-serif;
+  display: inline-block;
+  padding: 4px 12px;
+  background: white;
+  box-shadow: 2px 2px 0px rgba(0,0,0,0.15);
+  border-radius: 2px;
+  transform: rotate(var(--text-rotation, -1deg));
+}
+
+.cutout-number {
+  font-family: 'Jua', sans-serif;
+  font-size: 2.5em;
+  font-weight: bold;
+  display: inline-block;
+  padding: 8px 16px;
+  background: var(--accent-coral);
+  color: white;
+  box-shadow: 3px 3px 0px rgba(0,0,0,0.2);
+  border-radius: 4px;
+  transform: rotate(var(--num-rotation, 2deg));
+}
+
+/* 테이프 장식 */
+.tape {
+  position: absolute;
+  width: 60px;
+  height: 20px;
+  background: rgba(255, 235, 153, 0.7);
+  transform: rotate(var(--tape-rotation, -5deg));
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.tape::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: repeating-linear-gradient(
+    90deg,
+    transparent,
+    transparent 2px,
+    rgba(255,255,255,0.3) 2px,
+    rgba(255,255,255,0.3) 4px
+  );
+}
+
+.tape-top-left {
+  top: -8px;
+  left: 10px;
+  --tape-rotation: -15deg;
+}
+
+.tape-top-right {
+  top: -8px;
+  right: 10px;
+  --tape-rotation: 15deg;
+}
+
+/* 핀 장식 */
+.pin {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #ff8a8a, var(--accent-coral));
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.pin::after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: rgba(255,255,255,0.6);
+  border-radius: 50%;
+  top: 3px;
+  left: 4px;
+}
+
+/* 손그림 테두리 */
+.hand-drawn-border {
+  border: 3px solid var(--text-dark);
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+/* 불규칙한 가장자리 (가위로 자른 느낌) */
+.scissors-edge {
+  clip-path: polygon(
+    0% 2%, 3% 0%, 7% 2%, 11% 0%, 15% 1%, 19% 0%, 23% 2%, 27% 0%, 31% 1%, 35% 0%,
+    39% 2%, 43% 0%, 47% 1%, 51% 0%, 55% 2%, 59% 0%, 63% 1%, 67% 0%, 71% 2%, 75% 0%,
+    79% 1%, 83% 0%, 87% 2%, 91% 0%, 95% 1%, 100% 0%,
+    100% 98%, 97% 100%, 93% 98%, 89% 100%, 85% 99%, 81% 100%, 77% 98%, 73% 100%,
+    69% 99%, 65% 100%, 61% 98%, 57% 100%, 53% 99%, 49% 100%, 45% 98%, 41% 100%,
+    37% 99%, 33% 100%, 29% 98%, 25% 100%, 21% 99%, 17% 100%, 13% 98%, 9% 100%,
+    5% 99%, 0% 100%
+  );
+}
+
+/* 태그/라벨 스타일 */
+.paper-tag {
+  display: inline-block;
+  padding: 4px 10px;
+  font-family: 'Poor Story', cursive;
+  font-size: 0.9em;
+  border-radius: 2px;
+  box-shadow: 1px 1px 0px rgba(0,0,0,0.1);
+  transform: rotate(var(--tag-rotation, 0deg));
+}
+
+/* 제목 스타일 */
+h1, h2, h3 {
+  font-family: 'Jua', sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+/* 버튼 스타일 */
+.paper-button {
+  font-family: 'Jua', sans-serif;
+  padding: 12px 24px;
+  background: white;
+  border: none;
+  box-shadow: var(--shadow-paper);
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  transform: rotate(var(--btn-rotation, -1deg));
+}
+
+.paper-button:hover {
+  box-shadow: var(--shadow-paper-hover);
+  transform: rotate(var(--btn-rotation, -1deg)) translateY(-2px);
+}
+
+.paper-button-accent {
+  background: var(--accent-coral);
+  color: white;
+}
+
+.paper-button-teal {
+  background: var(--accent-teal);
+  color: white;
+}
+
+/* 네비게이션 링크 */
+.nav-link {
+  font-family: 'Jua', sans-serif;
+  position: relative;
+  padding: 8px 16px;
+  transition: all 0.2s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 3px;
+  background: var(--accent-coral);
+  transition: all 0.2s ease;
+  transform: translateX(-50%);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 80%;
+}
+
+/* 콜라주 레이아웃용 유틸리티 */
+.rotate-1 { transform: rotate(1deg); }
+.rotate-2 { transform: rotate(2deg); }
+.rotate-3 { transform: rotate(3deg); }
+.-rotate-1 { transform: rotate(-1deg); }
+.-rotate-2 { transform: rotate(-2deg); }
+.-rotate-3 { transform: rotate(-3deg); }
+
+/* 스크롤바 스타일링 */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--paper-cream);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent-teal);
+  border-radius: 6px;
+  border: 3px solid var(--paper-cream);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-coral);
+}
+
+/* 애니메이션 */
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(var(--rotation, 0deg)); }
+  50% { transform: translateY(-5px) rotate(var(--rotation, 0deg)); }
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(-2deg); }
+  50% { transform: rotate(2deg); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-wiggle {
+  animation: wiggle 0.5s ease-in-out;
+}
+
+/* 반응형 폰트 크기 */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .cutout-number {
+    font-size: 2em;
+  }
 }

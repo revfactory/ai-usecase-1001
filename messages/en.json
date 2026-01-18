@@ -1,0 +1,115 @@
+{
+  "common": {
+    "cases": "cases",
+    "total": "Total",
+    "new": "New",
+    "search": "Search",
+    "filter": "Filter",
+    "reset": "Reset",
+    "viewMore": "View More",
+    "loading": "Loading...",
+    "noResults": "No results found"
+  },
+  "nav": {
+    "home": "Home",
+    "explore": "Explore",
+    "dashboard": "Dashboard",
+    "matrix": "Matrix"
+  },
+  "home": {
+    "heroTitle1": "1,001",
+    "heroTitle2": "AI Use Cases",
+    "heroTitle3": "Insights",
+    "heroTitle4": "Discover",
+    "heroSubtitle": "Explore real-world generative AI implementations from leading global companies and apply them to your business",
+    "startExplore": "Start Exploring",
+    "viewDashboard": "View Dashboard",
+    "totalCases": "Use Cases",
+    "industries": "Industries",
+    "agentTypes": "Agent Types",
+    "newCases": "New Cases",
+    "industryExplore": "Explore by Industry",
+    "agentTypeExplore": "Agent Types",
+    "featuredCases": "Featured Success Stories",
+    "newAddedCases": "Recently Added Cases",
+    "viewMoreNew": "View More New Cases",
+    "footer": "Based on Google Cloud AI Use Cases | 1,001 Real Generative AI Cases",
+    "dataSource": "Data Source: Google Cloud \"1,001 Real Generative AI Use Cases\""
+  },
+  "explore": {
+    "title": "Explore Cases",
+    "subtitle": "Use filters to find the AI use cases you're looking for",
+    "searchPlaceholder": "Company, technology, keyword...",
+    "newOnly": "New cases only",
+    "industryFilter": "Industry",
+    "agentFilter": "Agent Type",
+    "clearFilters": "Clear Filters",
+    "foundCases": "cases found",
+    "noResults": "No results found",
+    "tryOther": "Try different filter conditions"
+  },
+  "dashboard": {
+    "title": "Insights Dashboard",
+    "subtitle": "Discover trends and patterns in AI use cases at a glance",
+    "totalCases": "Total Cases",
+    "newCases": "New Cases",
+    "techStack": "Tech Stack",
+    "industries": "Industries",
+    "industryChart": "Cases by Industry",
+    "agentChart": "Cases by Agent Type",
+    "heatmap": "Industry × Agent Heatmap",
+    "viewAll": "View All",
+    "topTech": "Top Technologies"
+  },
+  "matrix": {
+    "title": "Industry × Agent Matrix",
+    "subtitle": "Click a cell to view AI use cases for that combination",
+    "industryAgent": "Industry / Agent",
+    "total": "Total",
+    "low": "Low",
+    "medium": "Medium",
+    "high": "High",
+    "clickInfo": "Click a cell to explore cases for that combination on the explore page"
+  },
+  "industries": {
+    "automotive_logistics": "Automotive & Logistics",
+    "business_services": "Business Services",
+    "financial_services": "Financial Services",
+    "healthcare_lifesciences": "Healthcare",
+    "hospitality_travel": "Hospitality & Travel",
+    "manufacturing": "Manufacturing",
+    "media_marketing": "Media & Marketing",
+    "public_sector": "Public Sector",
+    "retail": "Retail",
+    "technology": "Technology",
+    "telecommunications": "Telecommunications"
+  },
+  "agentTypes": {
+    "customer_agent": "Customer Agent",
+    "employee_agent": "Employee Agent",
+    "creative_agent": "Creative Agent",
+    "code_agent": "Code Agent",
+    "data_agent": "Data Agent",
+    "security_agent": "Security Agent"
+  },
+  "agentDescriptions": {
+    "customer_agent": "Customer service, chatbots, virtual assistants",
+    "employee_agent": "Employee productivity, internal tools, workflow automation",
+    "creative_agent": "Content creation, design, marketing materials",
+    "code_agent": "Code generation, review, development tools",
+    "data_agent": "Data analysis, insight extraction, predictions",
+    "security_agent": "Security monitoring, threat detection, compliance"
+  },
+  "case": {
+    "notFound": "Case not found",
+    "backToExplore": "Back to Explore",
+    "backLink": "Back to Explore",
+    "useCase": "Use Case",
+    "keyMetrics": "Key Metrics",
+    "technologies": "Technologies Used",
+    "industrySection": "Industry",
+    "agentSection": "Agent Type",
+    "relatedCases": "Related Cases",
+    "exploreMore": "Explore More Cases"
+  }
+}

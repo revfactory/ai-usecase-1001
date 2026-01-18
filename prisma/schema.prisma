@@ -1,0 +1,78 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+// 산업 분야 테이블
+model Industry {
+  id       String    @id // automotive_logistics, business_services, etc.
+  name     String    // 자동차 및 물류, 비즈니스 서비스, etc.
+  color    String    // #FF6B6B
+  icon     String    // 🚗
+  useCases UseCase[]
+
+  @@map("industries")
+}
+
+// 에이전트 유형 테이블
+model AgentType {
+  id          String    @id // customer_agent, employee_agent, etc.
+  name        String    // 고객 에이전트, 직원 에이전트, etc.
+  icon        String    // 👤
+  description String
+  useCases    UseCase[]
+
+  @@map("agent_types")
+}
+
+// 기술 태그 테이블
+model Technology {
+  id       Int                 @id @default(autoincrement())
+  name     String              @unique
+  useCases UseCaseTechnology[]
+
+  @@map("technologies")
+}
+
+// UseCase-Technology 다대다 관계 테이블
+model UseCaseTechnology {
+  useCaseId    String
+  technologyId Int
+  useCase      UseCase    @relation(fields: [useCaseId], references: [id], onDelete: Cascade)
+  technology   Technology @relation(fields: [technologyId], references: [id], onDelete: Cascade)
+
+  @@id([useCaseId, technologyId])
+  @@map("usecase_technologies")
+}
+
+// 사용 사례 테이블 (메인)
+model UseCase {
+  id           String              @id // auto-cust-1, etc.
+  company      String              // 회사명
+  industryId   String
+  agentTypeId  String
+  summary      String              // 사례 요약 (기본, 레거시)
+  summaryKo    String?             // 한국어 요약
+  summaryEn    String?             // 영어 요약
+  metrics      String?             // 성과 지표 (선택)
+  isNew        Boolean             @default(false)
+  createdAt    DateTime            @default(now())
+  updatedAt    DateTime            @updatedAt
+
+  industry     Industry            @relation(fields: [industryId], references: [id])
+  agentType    AgentType           @relation(fields: [agentTypeId], references: [id])
+  technologies UseCaseTechnology[]
+
+  @@index([industryId])
+  @@index([agentTypeId])
+  @@index([isNew])
+  @@map("usecases")
+}

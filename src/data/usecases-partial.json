@@ -1,0 +1,350 @@
+[
+  {
+    "english": {
+      "id": "en-fina-data-1",
+      "company": "ATB Financial",
+      "companyOriginal": "ATB Financial",
+      "industry": "financial_services",
+      "agentType": "data_agent",
+      "summary": "ATB Financial, the largest Alberta-based financial institution with over $62.3 billion in assets under management, uses Gemini integrated with Google Sheets to provide analysts with fast access to formulas. The AI helps reduce routine work, with team members saving approximately two hours per week and 40% using Gemini daily.",
+      "summaryOriginal": "ATB Financial, the largest Alberta-based financial institution with over $62.3 billion in assets under management, uses Gemini integrated with Google Sheets to provide analysts with fast access to formulas. The AI helps reduce routine work, with team members saving approximately two hours per week and 40% using Gemini daily.",
+      "technologies": [
+        "Gemini"
+      ],
+      "metrics": "40% using Gemini daily",
+      "isNew": true
+    },
+    "reason": "Company exists but in different industry/agent type"
+  },
+  {
+    "english": {
+      "id": "en-fina-data-8",
+      "company": "CME Group",
+      "companyOriginal": "CME Group",
+      "industry": "financial_services",
+      "agentType": "data_agent",
+      "summary": "CME Group is building a first-of-its-kind cloud-based commodities trading platform with AI tools built-in, offering CME’s trading customers access to deeper insights and smarter trades as well as rapid experimentation on new trading strategies that won’t interrupt existing trade flows.",
+      "summaryOriginal": "CME Group is building a first-of-its-kind cloud-based commodities trading platform with AI tools built-in, offering CME’s trading customers access to deeper insights and smarter trades as well as rapid experimentation on new trading strategies that won’t interrupt existing trade flows.",
+      "technologies": [
+        "Google Cloud AI"
+      ],
+      "isNew": false
+    },
+    "reason": "Company exists but in different industry/agent type"
+  },
+  {
+    "english": {
+      "id": "en-heal-data-21",
+      "company": "Mayo Clinic",
+      "companyOriginal": "Mayo Clinic",
+      "industry": "healthcare_lifesciences",
+      "agentType": "data_agent",
+      "summary": "Mayo Clinic has given thousands of its scientific researchers access to 50 petabytes worth of clinical data through Vertex AI Search, accelerating information retrieval across multiple languages.",
+      "summaryOriginal": "Mayo Clinic has given thousands of its scientific researchers access to 50 petabytes worth of clinical data through Vertex AI Search, accelerating information retrieval across multiple languages.",
+      "technologies": [
+        "Vertex AI"
+      ],
+      "isNew": false
+    },
+    "reason": "Company exists but in different industry/agent type"
+  },
+  {
+    "english": {
+      "id": "en-hosp-cust-1",
+      "company": "Agoda",
+      "companyOriginal": "Agoda",
+      "industry": "hospitality_travel",
+      "agentType": "customer_agent",
+      "summary": "Agoda uses Gemini and Imagen to offer customized, hyper-personalized travel destination and itinerary suggestions, enhancing visitor engagement and bookings on the site. The AI Vacation Planner requires just eight user inputs to generate detailed travel plans in seconds, while Imagen creates hyper-realistic destination images at low cost compared to traditional sourcing methods.",
+      "summaryOriginal": "Agoda uses Gemini and Imagen to offer customized, hyper-personalized travel destination and itinerary suggestions, enhancing visitor engagement and bookings on the site. The AI Vacation Planner requires just eight user inputs to generate detailed travel plans in seconds, while Imagen creates hyper-realistic destination images at low cost compared to traditional sourcing methods.",
+      "technologies": [
+        "Gemini",
+        "Imagen"
+      ],
+      "isNew": true
+    },
+    "reason": "Company exists but in different industry/agent type"
+  },
+  {
+    "english": {
+      "id": "en-hosp-cust-10",
+      "company": "IHG Hotels & Resorts",
+      "companyOriginal": "IHG Hotels & Resorts",
+      "industry": "hospitality_travel",
+      "agentType": "customer_agent",
+      "summary": "IHG Hotels & Resorts is building a gen AI-powered chatbot to help guests easily plan their next vacation directly in the IHG One Rewards mobile app.",
+      "summaryOriginal": "IHG Hotels & Resorts is building a gen AI-powered chatbot to help guests easily plan their next vacation directly in the IHG One Rewards mobile app.",
+      "technologies": [
+        "Google Cloud AI"
+      ],
+      "isNew": false
+    },
+    "reason": "Company exists but in different industry/agent type"
+  },
+  {
+    "english": {
+      "id": "en-medi-crea-11",
+      "company": "Canva",
+      "companyOriginal": "Canva",
+      "industry": "media_marketing",
+      "agentType": "creative_agent",
+      "summary": "Canva is using Vertex AI to power its Magic Design for Video, helping users skip tedious editing steps while creating shareable and engaging videos in a matter of seconds.",
+      "summaryOriginal": "Canva is using Vertex AI to power its Magic Design for Video, helping users skip tedious editing steps while creating shareable and engaging videos in a matter of seconds.",
+      "technologies": [
+        "Vertex AI"
+      ],
+      "isNew": false
+    },
+    "reason": "Company exists but in different industry/agent type"
+  },
+  {
+    "english": {
+      "id": "en-medi-crea-20",
+      "company": "Figma",
+      "companyOriginal": "Figma",
+      "industry": "media_marketing",
+      "agentType": "creative_agent",
+      "summary": "Figma is helping their community create more than ever. With tools across their platform powered by Gemini’s Flash 2.5 Image model, their users can now make high quality, brand approved images with just a prompt, edit details with AI, and get all the variety their project needs.",
+      "summaryOriginal": "Figma is helping their community create more than ever. With tools across their platform powered by Gemini’s Flash 2.5 Image model, their users can now make high quality, brand approved images with just a prompt, edit details with AI, and get all the variety their project needs.",
+      "technologies": [
+        "Gemini"
+      ],
+      "isNew": true
+    },
+    "reason": "Company exists but in different industry/agent type"
+  },
+  {
+    "english": {
+      "id": "en-medi-crea-47",
+      "company": "Thoughtworks",
+      "companyOriginal": "Thoughtworks",
+      "industry": "media_marketing",
+      "agentType": "creative_agent",
+      "summary": "Thoughtworks has created a new way to plan enterprise marketing events with Gemini. It enables organizations to plan personalized events in minutes, rather than weeks, emphasizing creating a variety of events that resonate deeply with customers.",
+      "summaryOriginal": "Thoughtworks has created a new way to plan enterprise marketing events with Gemini. It enables organizations to plan personalized events in minutes, rather than weeks, emphasizing creating a variety of events that resonate deeply with customers.",
+      "technologies": [
+        "Gemini"
+      ],
+      "isNew": false
+    },
+    "reason": "Company exists but in different industry/agent type"
+  },
+  {
+    "english": {
+      "id": "en-reta-cust-2",
+      "company": "Best Buy",
+      "companyOriginal": "Best Buy",
+      "industry": "retail",
+      "agentType": "customer_agent",
+      "summary": "Best Buy uses Vertex AI to condense thousands of product reviews into concise insights that help customers make informed buying decisions. The AI-powered summarization improves customer trust and satisfaction while supporting the company's goal to bring the in-store experience into customers' homes.",
+      "summaryOriginal": "Best Buy uses Vertex AI to condense thousands of product reviews into concise insights that help customers make informed buying decisions. The AI-powered summarization improves customer trust and satisfaction while supporting the company's goal to bring the in-store experience into customers' homes.",
+      "technologies": [
+        "Vertex AI"
+      ],
+      "isNew": false
+    },
+    "reason": "Company exists but in different industry/agent type"
+  },
+  {
+    "english": {
+      "id": "en-reta-cust-9",
+      "company": "Dunelm",
+      "companyOriginal": "Dunelm",
+      "industry": "retail",
+      "agentType": "customer_agent",
+      "summary": "Dunelm has partnered with Google Cloud to enhance its online shopping experience with a new gen AI-driven product discovery solution. This has shown significant improvements in a number of key areas, including reduced search friction, helping customers find the products they are looking for.",
+      "summaryOriginal": "Dunelm has partnered with Google Cloud to enhance its online shopping experience with a new gen AI-driven product discovery solution. This has shown significant improvements in a number of key areas, including reduced search friction, helping customers find the products they are looking for.",
+      "technologies": [
+        "Google Cloud"
+      ],
+      "isNew": false
+    },
+    "reason": "Company exists but in different industry/agent type"
+  },
+  {
+    "english": {
+      "id": "en-reta-cust-12",
+      "company": "Etsy",
+      "companyOriginal": "Etsy",
+      "industry": "retail",
+      "agentType": "customer_agent",
+      "summary": "Etsy uses Vertex AI, BigQuery, Dataflow, and Gemini models to personalize shopping experiences for nearly 90 million shoppers across its 130 million-item marketplace. The AI-powered approach increased listings per theme by 80x through \"algotorial curation,\" improved SEO-driven visits by 5%, and boosted conversions by 3% through enhanced alt text generation.",
+      "summaryOriginal": "Etsy uses Vertex AI, BigQuery, Dataflow, and Gemini models to personalize shopping experiences for nearly 90 million shoppers across its 130 million-item marketplace. The AI-powered approach increased listings per theme by 80x through \"algotorial curation,\" improved SEO-driven visits by 5%, and boosted conversions by 3% through enhanced alt text generation.",
+      "technologies": [
+        "Vertex AI",
+        "Gemini",
+        "BigQuery",
+        "Dataflow"
+      ],
+      "metrics": "5%",
+      "isNew": true
+    },
+    "reason": "Company exists but in different industry/agent type"
+  },
+  {
+    "english": {
+      "id": "en-reta-cust-21",
+      "company": "Magalu",
+      "companyOriginal": "Magalu",
+      "industry": "retail",
+      "agentType": "customer_agent",
+      "summary": "Magalu, one of Brazil’s largest retailers, has put customer service at the center of its AI strategy, including using Vertex AI to create “Lu’s Brain” to power an interactive conversational agent for Lu, Magalu's popular brand persona (the 3D bot has more than 14 million followers between TikTok and Instagram).",
+      "summaryOriginal": "Magalu, one of Brazil’s largest retailers, has put customer service at the center of its AI strategy, including using Vertex AI to create “Lu’s Brain” to power an interactive conversational agent for Lu, Magalu's popular brand persona (the 3D bot has more than 14 million followers between TikTok and Instagram).",
+      "technologies": [
+        "Vertex AI"
+      ],
+      "isNew": false
+    },
+    "reason": "Company exists but in different industry/agent type"
+  },
+  {
+    "english": {
+      "id": "en-reta-crea-9",
+      "company": "The Estee Lauder Companies",
+      "companyOriginal": "The Estee Lauder Companies",
+      "industry": "retail",
+      "agentType": "creative_agent",
+      "summary": "The Estee Lauder Companies utilizes Google Cloud AI, including Gemini, to power its language assistant, Ella. This tool allows brand leaders to generate various creative content, translate languages, and summarize meetings, enhancing productivity and customer experience.",
+      "summaryOriginal": "The Estee Lauder Companies utilizes Google Cloud AI, including Gemini, to power its language assistant, Ella. This tool allows brand leaders to generate various creative content, translate languages, and summarize meetings, enhancing productivity and customer experience.",
+      "technologies": [
+        "Gemini",
+        "Google Cloud"
+      ],
+      "isNew": false
+    },
+    "reason": "Company exists but in different industry/agent type"
+  },
+  {
+    "english": {
+      "id": "en-reta-data-21",
+      "company": "Unilever",
+      "companyOriginal": "Unilever",
+      "industry": "retail",
+      "agentType": "data_agent",
+      "summary": "Unilever created digitized distribution trade processes using BigQuery. Using in-depth analytics, Unilever can now process 75,000 orders daily and reach millions of retailers in emerging markets.",
+      "summaryOriginal": "Unilever created digitized distribution trade processes using BigQuery. Using in-depth analytics, Unilever can now process 75,000 orders daily and reach millions of retailers in emerging markets.",
+      "technologies": [
+        "BigQuery"
+      ],
+      "isNew": false
+    },
+    "reason": "Company exists but in different industry/agent type"
+  },
+  {
+    "english": {
+      "id": "en-reta-data-24",
+      "company": "Etsy",
+      "companyOriginal": "Etsy",
+      "industry": "retail",
+      "agentType": "data_agent",
+      "summary": "Etsy deployed AI-powered Google Security Operations to simplify log management and ingestion, accelerated detection creation and review, and improved incident response capabilities.",
+      "summaryOriginal": "Etsy deployed AI-powered Google Security Operations to simplify log management and ingestion, accelerated detection creation and review, and improved incident response capabilities.",
+      "technologies": [
+        "Security Operations"
+      ],
+      "isNew": false
+    },
+    "reason": "Company exists but in different industry/agent type"
+  },
+  {
+    "english": {
+      "id": "en-reta-data-27",
+      "company": "Wyze Labs",
+      "companyOriginal": "Wyze Labs",
+      "industry": "retail",
+      "agentType": "data_agent",
+      "summary": "Wyze Labs is rolling out new AI-powered anomaly detection features for its security camera systems, powered by Google’s vision AI tool.",
+      "summaryOriginal": "Wyze Labs is rolling out new AI-powered anomaly detection features for its security camera systems, powered by Google’s vision AI tool.",
+      "technologies": [
+        "Google Cloud AI"
+      ],
+      "isNew": true
+    },
+    "reason": "Company exists but in different industry/agent type"
+  },
+  {
+    "english": {
+      "id": "en-tech-empl-39",
+      "company": "Typeface",
+      "companyOriginal": "Typeface",
+      "industry": "technology",
+      "agentType": "employee_agent",
+      "summary": "Typeface uses gen AI to allow brands to create captivating content that deeply engages customers at scale, improving operational efficiency while retaining branding consistency and control.",
+      "summaryOriginal": "Typeface uses gen AI to allow brands to create captivating content that deeply engages customers at scale, improving operational efficiency while retaining branding consistency and control.",
+      "technologies": [
+        "Google Cloud AI"
+      ],
+      "isNew": false
+    },
+    "reason": "Company exists but in different industry/agent type"
+  },
+  {
+    "english": {
+      "id": "en-tech-code-8",
+      "company": "Box",
+      "companyOriginal": "Box",
+      "industry": "technology",
+      "agentType": "code_agent",
+      "summary": "Box is already leveraging Gemini 2.5 to deliver more sophisticated, higher-value applications.",
+      "summaryOriginal": "Box is already leveraging Gemini 2.5 to deliver more sophisticated, higher-value applications.",
+      "technologies": [
+        "Gemini"
+      ],
+      "isNew": false
+    },
+    "reason": "Company exists but in different industry/agent type"
+  },
+  {
+    "english": {
+      "id": "en-tech-code-10",
+      "company": "Cognizant",
+      "companyOriginal": "Cognizant",
+      "industry": "technology",
+      "agentType": "code_agent",
+      "summary": "Cognizant uses Gemini and Vertex AI to assist in software development, improving code quality and developer productivity. By integrating Gemini into its internal operations and platforms, Cognizant aims to enhance insights, optimize processes, and improve user experiences.",
+      "summaryOriginal": "Cognizant uses Gemini and Vertex AI to assist in software development, improving code quality and developer productivity. By integrating Gemini into its internal operations and platforms, Cognizant aims to enhance insights, optimize processes, and improve user experiences.",
+      "technologies": [
+        "Vertex AI",
+        "Gemini"
+      ],
+      "isNew": false
+    },
+    "reason": "Company exists but in different industry/agent type"
+  },
+  {
+    "english": {
+      "id": "en-tech-data-12",
+      "company": "Box",
+      "companyOriginal": "Box",
+      "industry": "technology",
+      "agentType": "data_agent",
+      "summary": "Box uses Gemini on Vertex AI to develop an AI-driven metadata extraction feature that automatically captures data from large documents such as contract expiration dates and structures it for workflow integration. The solution eliminates manual processes that can consume hundreds of hours per year at enterprise companies, handling both digital documents and handwritten content while making sense of unstructured financial documents and contracts.",
+      "summaryOriginal": "Box uses Gemini on Vertex AI to develop an AI-driven metadata extraction feature that automatically captures data from large documents such as contract expiration dates and structures it for workflow integration. The solution eliminates manual processes that can consume hundreds of hours per year at enterprise companies, handling both digital documents and handwritten content while making sense of unstructured financial documents and contracts.",
+      "technologies": [
+        "Vertex AI",
+        "Gemini"
+      ],
+      "isNew": true
+    },
+    "reason": "Company exists but in different industry/agent type"
+  },
+  {
+    "english": {
+      "id": "en-tech-data-23",
+      "company": "Globant",
+      "companyOriginal": "Globant",
+      "industry": "technology",
+      "agentType": "data_agent",
+      "summary": "Globant, a global technology company with over 31,000 employees and multi-year Google Cloud Partner of the Year, built a financial data warehouse using BigQuery with Gemini to automate report generation and data analysis. The self-service platform eliminated 100% of manual report generation, reduced query resolution time by 80%, and created a single source of financial truth across multiple business units acquired through rapid company growth.",
+      "summaryOriginal": "Globant, a global technology company with over 31,000 employees and multi-year Google Cloud Partner of the Year, built a financial data warehouse using BigQuery with Gemini to automate report generation and data analysis. The self-service platform eliminated 100% of manual report generation, reduced query resolution time by 80%, and created a single source of financial truth across multiple business units acquired through rapid company growth.",
+      "technologies": [
+        "Gemini",
+        "BigQuery",
+        "Google Cloud"
+      ],
+      "metrics": "100% of manual report generation",
+      "isNew": true
+    },
+    "reason": "Company exists but in different industry/agent type"
+  }
+]
