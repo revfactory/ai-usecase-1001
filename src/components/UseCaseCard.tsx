@@ -61,8 +61,8 @@ export default function UseCaseCard({ useCase, index = 0 }: UseCaseCardProps) {
 
           {/* Summary */}
           <p
-            className="text-[var(--text-medium)] line-clamp-3 leading-relaxed"
-            style={{ fontFamily: 'Gaegu, cursive' }}
+            className="text-[var(--text-medium)] line-clamp-3 leading-relaxed text-sm"
+            style={{ fontFamily: "'Noto Sans KR', sans-serif" }}
           >
             {summary}
           </p>

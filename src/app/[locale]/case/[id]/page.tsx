@@ -151,8 +151,8 @@ export default function CaseDetailPage() {
                 📋 {t('useCase')}
               </h2>
               <p
-                className="text-xl leading-relaxed text-[var(--text-dark)]"
-                style={{ fontFamily: 'Gaegu, cursive' }}
+                className="text-lg leading-relaxed text-[var(--text-dark)]"
+                style={{ fontFamily: "'Noto Sans KR', sans-serif" }}
               >
                 {summary}
               </p>
